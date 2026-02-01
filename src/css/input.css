@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.containerNormal {
+    @apply p-4 max-w-5xl mx-auto w-full;
+}
+
+.CONTENT_PAGE {
+    @apply prose prose-neutral;
+}
+.CONTENT_PAGE a {
+    @apply text-red-600 no-underline;
+}
+.CONTENT_PAGE img {
+    @apply rounded-lg border border-neutral-300;
+}
