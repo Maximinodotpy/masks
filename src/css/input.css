@@ -16,3 +16,8 @@
 .CONTENT_PAGE img {
     @apply rounded-lg border border-neutral-300;
 }
+
+
+.site-branding .custom-logo-link img {
+    @apply h-12 w-auto aspect-square;
+}

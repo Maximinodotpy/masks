@@ -47,7 +47,7 @@
 			</div><!-- .site-branding -->
 	
 			<nav id="site-navigation" class="main-navigation flex items-center gap-2">
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'masks' ); ?></button>
+				<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'masks' ); ?></button> -->
 				<?php
 				wp_nav_menu(
 					array(
