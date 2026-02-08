@@ -21,6 +21,10 @@
 						array(
 							'theme_location' => 'menu-2',
 							'menu_id'        => 'footer-primary-menu',
+
+							// Link classes
+							'link_before' => '<span class="hover:underline">', // Add a class to the link
+							'link_after'  => '</span>', // Close the span
 						)
 					);
 					?>
@@ -32,6 +36,10 @@
 						array(
 							'theme_location' => 'menu-3',
 							'menu_id'        => 'footer-social-menu',
+
+							// Link classes
+							'link_before' => '<span class="hover:underline">', // Add a class to the link
+							'link_after'  => '</span>', // Close the span
 						)
 					);
 					?>
@@ -43,6 +51,10 @@
 						array(
 							'theme_location' => 'menu-4',
 							'menu_id'        => 'footer-legal-menu',
+
+							// Link classes
+							'link_before' => '<span class="hover:underline">', // Add a class to the link
+							'link_after'  => '</span>', // Close the span
 						)
 					);
 					?>
