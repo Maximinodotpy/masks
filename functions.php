@@ -49,7 +49,10 @@ function masks_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
 		array(
-			'menu-1' => esc_html__( 'Primary', 'masks' ),
+			'menu-1' => esc_html__( 'Header', 'masks' ),
+			'menu-2' => esc_html__( 'Footer', 'masks' ),
+			'menu-3' => esc_html__( 'Footer Social', 'masks' ),
+			'menu-4' => esc_html__( 'Footer Legal', 'masks' ),
 		)
 	);
 
@@ -146,6 +149,9 @@ function masks_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+
+	// Enqueue the custom page.js script for all pages
+	wp_enqueue_script( 'masks-page', get_template_directory_uri() . '/js/page.js', array(), _S_VERSION, true );
 }
 add_action( 'wp_enqueue_scripts', 'masks_scripts' );
 

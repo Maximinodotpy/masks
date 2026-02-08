@@ -27,9 +27,11 @@
 
 	<header id="masthead" class="bg-red-500 text-white">
 		<div class="containerNormal flex items-center justify-between">
-			<div class="site-branding">
+			<div class="site-branding flex items-center gap-2 font-bold">
+				<div class="invert">
+					<?php the_custom_logo(); ?>
+				</div>
 				<?php
-				the_custom_logo();
 				if ( is_front_page() && is_home() ) :
 					?>
 					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>

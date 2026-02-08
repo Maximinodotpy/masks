@@ -10,7 +10,7 @@
 .CONTENT_PAGE {
     @apply prose prose-neutral;
 }
-.CONTENT_PAGE a {
+.CONTENT_PAGE a:not(.wp-block-button__link) {
     @apply text-red-600 no-underline;
 }
 .CONTENT_PAGE img {
@@ -19,5 +19,5 @@
 
 
 .site-branding .custom-logo-link img {
-    @apply h-12 w-auto aspect-square;
+    @apply h-12 w-auto aspect-square select-none;
 }
